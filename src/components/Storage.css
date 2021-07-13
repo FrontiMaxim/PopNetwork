@@ -1,0 +1,66 @@
+.storage {
+    animation-name: animateStorage;
+    animation-delay: 1s;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.control-panel {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.control-panel h2 {
+    margin-left: 20px;
+    color: #fff;
+}
+
+.buttons {
+    height: 40px;
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.add-photo {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    background-color:#B269F6;
+    color: #fff;
+    font-size: 1vw;
+}
+
+.add-photo:hover {
+    cursor: pointer;
+    box-shadow: 0 0 5px #B269F6;
+}
+
+select {
+    width: 40%;
+    border-radius: 10px;
+    outline: none;
+    background-color: #232534;
+    color: #9EA1C9;
+}
+
+select:hover {
+    cursor: pointer;
+}
+
+@keyframes animateStorage {
+    0% {
+        transform: translateY(80px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
